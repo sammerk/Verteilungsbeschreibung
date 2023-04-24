@@ -210,7 +210,7 @@ reactable(
 
 ::: {style="font-size:0.8em;" .incremental}
 * Bei [intervallskalierten Variablen]{.imp} kann die zentrale Tendenz als "Durchschnitt" ([arithmetisches Mittel]{.imp}) angegeben werden (alle Datenpunkte aufsummieren und diese Summe durch die Anzahl der Datenpunkte teilen).
-* Bei [ordinalen Daten]{.imp} entspricht der [Median]{.imp} der zentralen Tendenz. Man erhält ihn, indem man alle Datenpunkte der Größe nach ordnet und dann den Wert in der Mitte nimmt. Ist die Anzahl der Datenpunkte eine gerade Zahl, entspricht der Median dem arithm. Mittel der beiden mittleren Werte)
+* Bei [ordinalen Daten]{.imp} entspricht der [Median]{.imp} der zentralen Tendenz. Man erhält ihn, indem man alle Datenpunkte der Größe nach ordnet und dann den Wert in der Mitte nimmt. Ist die Anzahl der Datenpunkte eine gerade Zahl, entspricht der Median dem arithm. Mittel der beiden mittleren Werte.
 * Bei [nominalen Daten]{.imp} kann man den [Modus]{.imp} (Kategorie mit der häufigsten Ausprägung) als zentrale Tendenz auffassen.
 
 :::
@@ -248,7 +248,7 @@ $$Fehltage = 13, 4, 14, 4, 10$$
 
 . . .
 
-$$MeanAD(\text{Fehltage}) = \frac{4+5+5+5+1}{5} = 9$$
+$$MeanAD(\text{Fehltage}) = \frac{4+5+5+5+1}{5} = 4$$
 
 ## Varianz & Standardabweichung {.smaller}
 
@@ -267,7 +267,7 @@ $$Standardabweichung = \sqrt{s^2} = \sqrt{23}$$
 
 ## Streuungsmaße: Definitionen {.smaller .center}
 ::: {style="font-size:.9em;"}
-Wenn $X = \{x_1, x_2, ..., x_n\}$ eine intervallskalierte empirische Variable darstellt, sind die _Mean Average Deviation_ $MeanAD$, die _Median Average Deviation_ $MedAD$, die _Varianz_ $s^2$, die Standardabweichung $s$, die Quartile $Q_1$, $Q_2$, $Q_3$, sowie der Interquartilsbereich $IQR$ wie folgt definiert: 
+Wenn $X = \{x_1, x_2, ..., x_n\}$ eine intervallskalierte empirische Variable darstellt, sind die _Mean Average Deviation_ $MeanAD$, die _Median Average Deviation_ $MedianAD$, die _Varianz_ $s^2$, die Standardabweichung $s$, die Quartile $Q_1$, $Q_2$, $Q_3$, sowie der Interquartilsbereich $IQR$ wie folgt definiert: 
 $$Range = [min(x_i);\;max(x_i)]$$
 $$MeanAD = \frac{1}{n} \sum_{i=1}^{n} \left(|\overline{x} - x_i |\right)  \;\;\;\;  MedianAD = \frac{1}{n} \sum_{i=1}^{n} \left(|\widetilde{x} - x_i |\right)$$
 $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} \left(\overline{x} - x_i \right)^2  \;\;\;\;  s = \sqrt{s^2} = \sqrt{ \frac{1}{n-1} \sum_{i=1}^{n} \left(\overline{x} - x_i \right)^2}$$
