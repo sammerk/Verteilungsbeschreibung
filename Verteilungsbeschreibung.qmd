@@ -253,7 +253,11 @@ $$MeanAD(\text{Fehltage}) = \frac{4+5+5+5+1}{5} = 9$$
 ## Varianz & Standardabweichung {.smaller}
 
 ::: {.r-stack}
-![](img/VAR.png){.fragment fragment-index=1 width="70%" fig-align="center"}
+![](img/var2.png){.fragment fragment-index=1 width="70%" fig-align="center"}
+
+![](img/var1.png){.fragment fragment-index=2 width="70%" fig-align="center"}
+
+![](img/var3.png){.fragment fragment-index=3 width="70%" fig-align="center"}
 :::
 
 . . .
