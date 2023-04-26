@@ -26,7 +26,7 @@ ui <- fluidPage(
                    choices = c("große Streuung" = "große Streuung",
                                "kleine Streuung" = "kleine Streuung",
                                "Bimodalität" = "Bimodalität",
-                               "Linksschiefe" = "Linksschiefe")),
+                               "Rechtsschiefe" = "Rechtsschiefe")),
       selectInput(
         "plottype",
         "Art der Visualisierung",
@@ -56,7 +56,7 @@ server <- function(input, output, session) {
            `große Streuung` = rbeta(input$sample_n, 9, 3)*15,
            `Bimodalität` = c(rbeta(floor(input$sample_n/2), 38, 15)*15,
                              rbeta(ceil(input$sample_n/2), 28, 35)*15),
-           `Linksschiefe` = rbeta(input$sample_n, 5, 2)*15) %>%
+           `Rechtsschiefe` = rbeta(input$sample_n, 2, .5)*15) %>%
       gather(Variable, Notenpunkte)%>%
       mutate(dummy = 1) %>%
       filter(Variable == input$Eigenschaft) %>%
@@ -72,8 +72,8 @@ server <- function(input, output, session) {
       sr <- "Verteilung mit vglw. kleiner Streuung"
     if(input$Eigenschaft == "Bimodalität")
       sr <- "Bimodale Verteilung"
-    if(input$Eigenschaft == "Linksschiefe")
-      sr <- "Linksschiefe Verteilung"
+    if(input$Eigenschaft == "Rechtsschiefe")
+      sr <- "Rechtsschiefe Verteilung"
     return(sr)
   })
   
